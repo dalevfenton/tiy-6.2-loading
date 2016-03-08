@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<div class="ship">
+  <ul>
+    {{#each this}}
+      <li>{{@key}} - {{this}}</li>
+    {{/each}}
+    <button id="{{this._id}}" class="delete-ship">Delete</button>
+  </ul>
+</div>

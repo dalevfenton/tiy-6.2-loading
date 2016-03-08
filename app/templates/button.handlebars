@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{{#if this.clicked}}
+  <button id="submit" type="submit" class="btn btn-lg" disabled>{{this.replace}}</button>
+{{else}}
+  <button id="submit" type="submit" class="btn btn-lg">{{this.label}}</button>
+{{/if}}
+{{#if this.loaded}}
+  <button id="new-ship" type="submit" class="btn btn-lg">Create New Ship</button>
+{{else}}
+  <button id="new-ship" type="submit" class="btn btn-lg" disabled>Create New Ship</button>
+{{/if}}

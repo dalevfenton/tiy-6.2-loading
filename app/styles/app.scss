@@ -1,0 +1,67 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+button #submit{
+  background: linear-gradient(rgb(252, 252, 245) ,rgb(221, 221, 221));
+  border-radius: 1px;
+  border: 1px solid rgb(124, 124, 124);
+  position: relative;
+  &:active{
+    background: linear-gradient( rgb(221, 221, 221), rgb(252, 252, 245) );
+  }
+  &:focus{
+    outline: none;
+  }
+}
+#button-holder{
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+.ship{
+  width: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+  & ul{
+      list-style: none;
+  }
+  &:nth-child(even){
+    margin-left: -4px;
+  }
+}
+.panel{
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  &:nth-child(odd){
+    margin-right: 5%;
+  }
+  &:nth-child(even){
+    margin-left: -4px;
+  }
+}
+.new-ship-input{
+  width: 60%;
+  margin-right: 40%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+.delete-ship{
+  float: right;
+}
