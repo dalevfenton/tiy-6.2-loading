@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <div id="ship-accordion" role="tablist" aria-multiselectable="true">
   {{#each this}}
+
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="heading-{{@index}}">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#ship-accordion" href="#collapse-{{@index}}" aria-expanded="false" aria-controls="collapse-{{@index}}">
           {{this.name}}
         </a>
-        <button id="{{this._id}}" class="delete-ship">Delete</button>
+        <button id="delete-{{this._id}}" class="delete-ship">Delete</button>
+        <button id="edit-{{this._id}}" class="edit-ship">Edit</button>
       </h4>
     </div>
     <div id="collapse-{{@index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{@index}}">

@@ -5858,7 +5858,8 @@ button #submit {
   height: 25px;
   margin-bottom: 10px; }
 
-.delete-ship {
-  float: right; }
+.delete-ship, .edit-ship {
+  float: right;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=app.css.map */
